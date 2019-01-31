@@ -1,0 +1,24 @@
+﻿<Window x:Class="DrLiDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrLiDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="bttn_MW_InputFile" Content="Read" HorizontalAlignment="Left" Height="35" Margin="370,41,0,0" VerticalAlignment="Top" Width="59" Click="bttn_MW_InputFile_Click"/>
+        <TextBox x:Name="txtBx_MW_InputFile" HorizontalAlignment="Left" Height="21" Margin="100,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Label x:Name="lbl_MW_InputFile" Content="Input" HorizontalAlignment="Left" Height="33" Margin="28,55,0,0" VerticalAlignment="Top" Width="72"/>
+        <Button x:Name="bttn_MW_SavePath" Content="Save" HorizontalAlignment="Left" Height="36" Margin="370,120,0,0" VerticalAlignment="Top" Width="59" Click="button_Click"/>
+        <TextBox x:Name="txtBx_MW_SavePath" HorizontalAlignment="Left" Height="23" Margin="100,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Label x:Name="label_MW_SavePath" Content="Save" HorizontalAlignment="Left" Height="31" Margin="28,125,0,0" VerticalAlignment="Top" Width="52"/>
+        <Button x:Name="bttn_MW_Start" Content="Start" HorizontalAlignment="Left" Height="45" Margin="80,212,0,0" VerticalAlignment="Top" Width="65" Click="bttn_MW_Start_Click"/>
+        <Button x:Name="bttn_MW_Close" Content="Close" HorizontalAlignment="Left" Height="45" Margin="228,212,0,0" VerticalAlignment="Top" Width="65" Click="bttn_MW_Close_Click"/>
+        <ComboBox x:Name="cmbBx_MW_InputMethod" Margin="370,212,53,48" FontSize="12">
+            <ComboBoxItem FontSize="12" >Camera</ComboBoxItem>
+            <ComboBoxItem FontSize="12" >Local</ComboBoxItem>
+        </ComboBox>
+
+    </Grid>
+</Window>
